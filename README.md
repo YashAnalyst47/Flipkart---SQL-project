@@ -91,7 +91,7 @@ The following queries were created to solve specific business questions. Each qu
 
 ## SQL Queries & Analysis
 
-The `queries.sql` file contains all SQL queries developed for this project. Each query corresponds to a business problem and demonstrates skills in SQL syntax, data filtering, aggregation, grouping, and ordering.
+The `Analysis.sql` file contains all SQL queries developed for this project. Each query corresponds to a business problem and demonstrates skills in SQL syntax, data filtering, aggregation, grouping, and ordering.
 
 ---
 
@@ -110,7 +110,7 @@ The `queries.sql` file contains all SQL queries developed for this project. Each
    - Run the `Flipkart_schemas.sql` script to set up tables and insert sample data.
 
 3. **Run Queries**:
-   - Execute each query in `queries.sql` to explore and analyze the data.
+   - Execute each query in `Analysis.sql` to explore and analyze the data.
 
 ---
 
