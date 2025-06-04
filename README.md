@@ -107,7 +107,7 @@ The `queries.sql` file contains all SQL queries developed for this project. Each
    git clone https://github.com/YashAnalyst47/Flipkart---SQL-project
    ```
 2. **Set Up the Database**:
-   - Run the `schema.sql` script to set up tables and insert sample data.
+   - Run the `Flipkart_schemas.sql` script to set up tables and insert sample data.
 
 3. **Run Queries**:
    - Execute each query in `queries.sql` to explore and analyze the data.
@@ -127,4 +127,4 @@ functions. They do not represent real data associated with Amazon or any other e
 project is solely for learning and educational purposes, and any resemblance to actual persons,
 businesses, or events is purely coincidental.
 
-![ERD Placeholder] https://github.com/YashAnalyst47/Flipkart---SQL-project/blob/main/Flipkart%20Project%20Schemas.png
+![ERD Placeholder] https://github.com/YashAnalyst47/Flipkart---SQL-project/blob/main/Flipkart%20ERD%20diagram.png
