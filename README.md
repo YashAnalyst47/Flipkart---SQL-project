@@ -1,7 +1,7 @@
 
 # Flipkart E-commerce SQL Project
 
-![Project Banner Placeholder](https://github.com/najirh/Flipkart--SQL-Project-B01/blob/main/flipkart.jpg)
+![Project Banner Placeholder](https://github.com/YashAnalyst47/Flipkart---SQL-project/blob/main/flipkart.jpg)
 
 Welcome to my SQL project, where I analyze real-time data from **Flipkart**! This project uses a dataset of **20,000+ sales records** and additional tables for payments, products, and shipping data to explore and analyze e-commerce transactions, product sales, and customer interactions. The project aims to solve business problems through SQL queries, helping Flipkart make informed decisions.
 
@@ -118,23 +118,6 @@ The `queries.sql` file contains all SQL queries developed for this project. Each
 
 Feel free to add your questions and code snippets below and submit them as issues for further feedback!
 
-**Example Questions**:
-1. **Question**: How can I filter orders placed in the last 6 months?
-   **Code Snippet**:
-   ```sql
-   SELECT * FROM sales
-   WHERE order_date >= CURRENT_DATE - INTERVAL '6 months';
-   ```
-
----
-
-## Contact Me
-
-📄 **[Resume](#)**  
-📧 **[Email](mailto:your.email@example.com)**  
-📞 **Phone**: +123-456-7890  
-
----
 
 ## ERD (Entity-Relationship Diagram)
 
@@ -144,4 +127,4 @@ functions. They do not represent real data associated with Amazon or any other e
 project is solely for learning and educational purposes, and any resemblance to actual persons,
 businesses, or events is purely coincidental.
 
-![ERD Placeholder](https://github.com/najirh/Flipkart--SQL-Project-B01/blob/main/Flipkart%20Project%20Schemas.png)
+![ERD Placeholder] https://github.com/YashAnalyst47/Flipkart---SQL-project/blob/main/Flipkart%20Project%20Schemas.png
