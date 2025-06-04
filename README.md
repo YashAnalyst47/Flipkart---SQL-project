@@ -107,7 +107,7 @@ The `Analysis.sql` file contains all SQL queries developed for this project. Eac
    git clone https://github.com/YashAnalyst47/Flipkart---SQL-project
    ```
 2. **Set Up the Database**:
-   - Run the `Flipkart_schemas.sql` script to set up tables and insert sample data.
+   - Run the `Flipkart_schemas.sql` script to set up tables and establish the constraints. Refer to the attached CSV files for importing the sample data.
 
 3. **Run Queries**:
    - Execute each query in `Analysis.sql` to explore and analyze the data.
