@@ -74,20 +74,14 @@ Here’s an overview of the database structure:
 The following queries were created to solve specific business questions. Each query is designed to provide insights based on sales, payments, products, and customer data.
 
 ### Easy 
-1. `Add your questions here`
+1. `Retrieve all products along with their total sales revenue from completed orders.`
 2. `Add your questions here`
 3. `Add your questions here`
 4. `Add your questions here`
 5. `Add your questions here`
    
-### Medium to Hard
-1. `Add your questions here`
-2. `Add your questions here`
-3. `Add your questions here`
-4. `Add your questions here`
-5. `Add your questions here`
-   
----
+
+
 
 ## SQL Queries & Analysis
 
