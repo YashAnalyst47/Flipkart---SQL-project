@@ -78,19 +78,16 @@ The following queries were created to solve specific business questions. Each qu
 3. `Find the total amount spent by customers in 'Gujarat' who have ordered products priced greater than 10,000.`
 4. `Find the average order value per customer for orders with a quantity of more than 5.`
 5. `Get the top 5 customers by total spending on 'Accessories'.`
-6. `Add your questions here`
-7. `Add your questions here`
-8. `Add your questions here`
-9. `Add your questions here`
-10. `Add your questions here`
+6. `Retrieve a list of customers whose payment hasn't been successful for their orders.`
+7. `Find the most popular product based on total quantity sold in 2023.`
+8. `List all orders that were cancelled and the reason for cancellation (if available).`
+9. `Retrieve the total quantity of products sold by category in 2022.`
+10. `Get the count of returned orders by shipping provider in 2024.`
+11. `List the products that have never been ordered.`
    
-
-
-
 ## SQL Queries & Analysis
 
 The `Analysis.sql` file contains all SQL queries developed for this project. Each query corresponds to a business problem and demonstrates skills in SQL syntax, data filtering, aggregation, grouping, and ordering.
-
 ---
 
 ## Getting Started
