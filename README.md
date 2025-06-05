@@ -73,12 +73,16 @@ Here’s an overview of the database structure:
 
 The following queries were created to solve specific business questions. Each query is designed to provide insights based on sales, payments, products, and customer data.
 
-### Easy 
 1. `Retrieve all products along with their total sales revenue from completed orders.`
-2. `Add your questions here`
-3. `Add your questions here`
-4. `Add your questions here`
-5. `Add your questions here`
+2. `List all customers and the products they have purchased, showing only those who have ordered more than two products.`
+3. `Find the total amount spent by customers in 'Gujarat' who have ordered products priced greater than 10,000.`
+4. `Find the average order value per customer for orders with a quantity of more than 5.`
+5. `Get the top 5 customers by total spending on 'Accessories'.`
+6. `Add your questions here`
+7. `Add your questions here`
+8. `Add your questions here`
+9. `Add your questions here`
+10. `Add your questions here`
    
 
 
