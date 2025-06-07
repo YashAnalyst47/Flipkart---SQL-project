@@ -58,7 +58,7 @@ ON p.order_id = s.order_id
 GROUP BY s.customer_id,c.customer_name,s.order_id,p.payment_status
 HAVING p.payment_status = 'Payment Failed'
 
--- Find the most popular product based on total quantity sold in 2023.
+-- 7) Find the most popular product based on total quantity sold in 2023.
 
 SELECT p.product_id,p.product_name, SUM(s.quantity) AS units_sold
 FROM products p
@@ -73,7 +73,7 @@ GROUP BY p.product_id,p.product_name
 ORDER BY units_sold DESC
 LIMIT 1;
 
--- 7) List all orders that were cancelled and the reason for cancellation (if available).
+-- 8) List all orders that were cancelled and the reason for cancellation (if available).
 
 SELECT s.order_id,s.order_status,s.order_date,p.payment_status
 FROM sales s
@@ -84,7 +84,7 @@ ORDER BY s.order_date ASC
 
 -- By running the above query, it is evidant that the failed payment is the reason for order cancellation.
 
--- 8) Retrieve the total quantity of products sold by category in 2022.
+-- 9) Retrieve the total quantity of products sold by category in 2022.
 
 SELECT p.category, SUM(s.quantity) AS units_sold
 FROM sales s
@@ -98,7 +98,7 @@ AND ps.payment_status='Payment Successed'
 GROUP BY p.category
 ORDER BY units_sold DESC
 
--- 9) Get the count of returned orders by shipping provider in 2024.
+-- 10) Get the count of returned orders by shipping provider in 2024.
 
 SELECT sh.shipping_providers,COUNT(s.order_id) AS returned_orders
 FROM sales s
@@ -109,7 +109,7 @@ AND s.order_status='Returned'
 GROUP BY sh.shipping_providers
 ORDER BY returned_orders DESC
 
--- 10) List the products that have never been ordered 
+-- 11) List the products that have never been ordered 
 
 SELECT p.product_id,p.product_name
 FROM products p
@@ -117,6 +117,22 @@ LEFT JOIN sales s
 ON p.product_id = s.product_id
 WHERE s.order_status IS NULL
 ORDER BY p.product_id ASC
+
+-- 12) List the total sales recorded each month for the year 2024 & ascertain the month with the highest sales.
+
+SELECT SUM (s.quantity * s.price_per_unit) AS total_sales, TO_CHAR(s.order_date,'MONTH') as month_name
+FROM sales s
+LEFT JOIN payments p
+ON s.order_id = p.order_id
+WHERE s.order_status='Completed' 
+AND p.payment_status='Payment Successed'
+AND EXTRACT(YEAR FROM s.order_date)='2021'
+GROUP BY month_name
+ORDER BY total_sales DESC
+
+-- By running the above query, it is observed that the month of July had recorded the highest sales.
+
+
 
 
 
