@@ -132,6 +132,23 @@ ORDER BY total_sales DESC
 
 -- By running the above query, it is observed that the month of July had recorded the highest sales.
 
+--13) Find the top 2 best selling brand of each month based on qty sold for the year 2023 utilizing window functions.
+
+WITH sales_analysis AS 
+(
+SELECT TO_CHAR(s.order_date,'MONTH') AS month_name,SUM(s.quantity) AS units_sold, p.brand, s.order_status,
+DENSE_RANK() OVER(PARTITION BY TO_CHAR(s.order_date,'MONTH') ORDER BY COUNT(s.quantity) DESC) AS sales_rank
+FROM sales s
+LEFT JOIN products p 
+ON s.product_id = p.product_id
+WHERE EXTRACT(YEAR FROM s.order_date)=2023 AND s.order_status ='Completed'
+GROUP BY month_name,p.brand,s.order_status
+)
+
+SELECT DISTINCT sa.month_name,sa.brand,sa.units_sold,sa.sales_rank
+FROM sales_analysis sa
+WHERE sa.sales_rank <=2 AND sa.order_status ='Completed' 
+ORDER BY sa.month_name,sa.sales_rank
 
 
 
