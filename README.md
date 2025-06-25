@@ -85,6 +85,7 @@ The following queries were created to solve specific business questions. Each qu
 10. `Get the count of returned orders by shipping provider in 2024.`
 11. `List the products that have never been ordered.`
 12. `List the total sales recorded each month for the year 2024 & ascertain the month with the highest sales.`
+13. `Find the top 2 best selling brand of each month based on qty sold for the year 2023 [Utilizing window functions].`
    
 ## SQL Queries & Analysis
 
